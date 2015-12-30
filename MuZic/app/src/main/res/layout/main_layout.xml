@@ -17,6 +17,7 @@
         android:layout_height="match_parent"
         android:id="@+id/optionList"
         android:layout_gravity="start"
+        android:background="#dedede"
         >
     </ListView>
 

@@ -5,4 +5,9 @@
     <string name="MuZic">MuZic</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_player">Player</string>
+    <string name="openDrawer">Open</string>
+    <string name="closeDrawer">Close</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
