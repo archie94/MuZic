@@ -3,6 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" tools:context="com.prizm.muzic.NowPlayingFragment">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All Tracks"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center_horizontal"
+        />
+
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -10,5 +18,7 @@
         >
 
     </ListView>
+
+
 
 </FrameLayout>

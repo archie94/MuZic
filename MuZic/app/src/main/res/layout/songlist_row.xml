@@ -25,13 +25,22 @@
             android:text="Unknown Song"
             android:id="@+id/songlist_row_songName" />
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:text="Unknown Artist"
             android:id="@+id/songlist_row_artistName"
             android:layout_below="@+id/songlist_row_songName"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/songlist_row_songLength" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:id="@+id/songlist_row_songLength"
+            android:layout_below="@+id/songlist_row_songName"
+            android:layout_alignParentEnd="true" />
 
 
     </RelativeLayout>

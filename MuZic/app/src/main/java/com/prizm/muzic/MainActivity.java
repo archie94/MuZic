@@ -110,6 +110,10 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
                 fragmentTransaction.commit();
                 break;
             case 1:
+                TracksFragment tracksFragment = new TracksFragment();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragmentHolder,tracksFragment);
+                fragmentTransaction.commit();
                 break;
             case 2:
                 break;
