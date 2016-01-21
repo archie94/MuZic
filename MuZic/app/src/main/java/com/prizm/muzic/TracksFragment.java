@@ -48,6 +48,8 @@ public class TracksFragment extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
+        View view = inflater.inflate(R.layout.fragment_tracks,container,false);
+        lv = (ListView)view.findViewById(android.R.id.list);
         final ArrayList<File> mySongs = findSongs(Environment.getExternalStorageDirectory());
         songNames = new String[mySongs.size()];
         for (int i=0;i<mySongs.size();i++)
@@ -63,7 +65,7 @@ public class TracksFragment extends Fragment
                 startActivity(new Intent(activity.getApplicationContext(), Player.class).putExtra("pos", position).putExtra("songslist", mySongs));
             }
         });
-        return inflater.inflate(R.layout.fragment_tracks,container,false);
+        return view ;
     }
 
     public ArrayList<File> findSongs(File root)
